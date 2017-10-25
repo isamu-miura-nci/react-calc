@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #bdbdbd;
+}
+/* 電卓コンテナ */
+.calculator {
+    width : 330px;
+    height : 340px;
+    margin : 20px auto;
+    padding : 20px;
+}
+/* 表示部分コンテナ */
+.calculator .display-panel {
+    padding : 5px;
+    background: #455a64;
+    color : #FFF;
+    height : 40px;
+    width : auto;
+    display : flex;
+    align-items: center;
+    justify-content:space-between;
+}
+/* 表示部分 数字 */
+.calculator .display-panel .display-number {
+    width: 100%;
+    font-size: 28px;
+    text-align: right;
+    overflow: hidden
+}
+/* 表示部分 前回の演算子 */
+.calculator .display-panel .display-status {
+    width: 20px;
+    font-size: 14px;
+    text-align: right;
+}
+
+/* ボタン部分 */
+.button-panel {
+    width : auto;
+    display: flex;
+    margin-top : 20px;
+}
+.button-panel-left {
+    width : 100%;
+}
+.button-panel-right {
+    width : 70px;
+}
+
+.calc-button {
+    width : 60px;
+    margin : 5px;
+    min-width: 60px!important;
+}
