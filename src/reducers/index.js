@@ -177,6 +177,8 @@ const setOperator = (state, operator) => {
     }else {
         // 演算子が「=」ならデフォルトモードに
         newState.mode = CalcMode.Default;
+        newState.operator = operator;
+        newState.input = newState.result;
     }
     
     
